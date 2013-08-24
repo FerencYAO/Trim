@@ -1,5 +1,5 @@
 //
-//  NSString+Opera.h
+//  NSString+Trim.h
 //  StringOpera
 //
 //  Created by yao on 13-8-24.
@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSString (Opera)
+@interface NSString (Trim)
+
+- (NSString *)trimFontAndEndSpace;
+
+- (NSString *)trimFontSpace;
+
+- (NSString *)trimEndSpace;
+
+- (NSString *)trimAllSpace;
 
 @end
