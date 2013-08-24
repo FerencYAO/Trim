@@ -1,0 +1,4 @@
+Trim
+====
+
+NString trim category
