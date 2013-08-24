@@ -12,9 +12,7 @@
 
 - (NSString *)trimFontAndEndSpace
 {
-    NSString *trimFontStr = [self trimFontSpace];
-    NSString *trimEndStr = [trimFontStr trimEndSpace];
-    return trimEndStr;
+    return [[self trimFontSpace] trimFontSpace];
 }
 
 - (NSString *)trimFontSpace
