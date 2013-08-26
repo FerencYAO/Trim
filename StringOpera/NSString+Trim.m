@@ -12,26 +12,34 @@
 
 - (NSString *)trimFontAndEndSpace
 {
-    return [[self trimFontSpace] trimFontSpace];
+  NSString *leadingTrailingWhiteSpacesPattern = @"(?:^\\s+)|(?:\\s+$)";
+  NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:leadingTrailingWhiteSpacesPattern options:NSRegularExpressionCaseInsensitive error:NULL];
+  NSRange stringRange = NSMakeRange(0, self.length);
+  NSString *trimmedString = [regex stringByReplacingMatchesInString:self options:NSMatchingReportProgress range:stringRange withTemplate:@"$1"];
+  return trimmedString;
 }
 
 - (NSString *)trimFontSpace
 {
-    int i = 0;
-    for (; i < self.length && [self characterAtIndex:i] == ' '; i++);
-    return [self substringFromIndex:i];
+  NSString *leadingWhiteSpacesPattern = @"(?:^\\s+)";
+  NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:leadingWhiteSpacesPattern options:NSRegularExpressionCaseInsensitive error:NULL];
+  NSRange stringRange = NSMakeRange(0, self.length);
+  NSString *trimmedString = [regex stringByReplacingMatchesInString:self options:NSMatchingReportProgress range:stringRange withTemplate:@"$1"];
+  return trimmedString;
 }
 
 - (NSString *)trimEndSpace
 {
-    int i = self.length - 1;
-    for (; i >= 0 && [self characterAtIndex:i] == ' '; i--);
-    return [self substringToIndex:i + 1];
+  NSString *tailWhiteSpacesPattern =@"(?:\\s+$)";
+  NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:tailWhiteSpacesPattern options:NSRegularExpressionCaseInsensitive error:NULL];
+  NSRange stringRange =NSMakeRange(0, self.length);
+  NSString *trimmedString = [regex stringByReplacingMatchesInString:self options:NSMatchingReportProgress range:stringRange withTemplate:@"$1"];
+  return trimmedString;
 }
 
 - (NSString *)trimAllSpace
 {
-    return [self stringByReplacingOccurrencesOfString:@" " withString:@""];
+  return [self stringByReplacingOccurrencesOfString:@" " withString:@""];
 }
 
 @end
