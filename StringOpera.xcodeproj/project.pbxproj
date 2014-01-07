@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		556F64D017E36405004F8181 /* YLPerformLater.m in Sources */ = {isa = PBXBuildFile; fileRef = 556F64CF17E36405004F8181 /* YLPerformLater.m */; };
+		556F64D117E3671B004F8181 /* YLPerformLater.m in Sources */ = {isa = PBXBuildFile; fileRef = 556F64CF17E36405004F8181 /* YLPerformLater.m */; };
+		55C23391187C3C460011E5B0 /* NSString+Trim.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C2338F187C3C460011E5B0 /* NSString+Trim.m */; };
 		55F0C6FB17C86E0000EBC2D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F0C6FA17C86E0000EBC2D3 /* UIKit.framework */; };
 		55F0C6FD17C86E0000EBC2D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F0C6FC17C86E0000EBC2D3 /* Foundation.framework */; };
 		55F0C6FF17C86E0000EBC2D3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F0C6FE17C86E0000EBC2D3 /* CoreGraphics.framework */; };
@@ -16,16 +19,18 @@
 		55F0C70D17C86E0000EBC2D3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 55F0C70C17C86E0000EBC2D3 /* Default.png */; };
 		55F0C70F17C86E0000EBC2D3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55F0C70E17C86E0000EBC2D3 /* Default@2x.png */; };
 		55F0C71117C86E0000EBC2D3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55F0C71017C86E0000EBC2D3 /* Default-568h@2x.png */; };
-		55F0C71917C86E2400EBC2D3 /* NSString+Trim.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F0C71817C86E2400EBC2D3 /* NSString+Trim.m */; };
 		55F0C72117C86E4E00EBC2D3 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F0C72017C86E4E00EBC2D3 /* SenTestingKit.framework */; };
 		55F0C72217C86E4E00EBC2D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F0C6FA17C86E0000EBC2D3 /* UIKit.framework */; };
 		55F0C72317C86E4E00EBC2D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F0C6FC17C86E0000EBC2D3 /* Foundation.framework */; };
 		55F0C72917C86E4E00EBC2D3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55F0C72717C86E4E00EBC2D3 /* InfoPlist.strings */; };
 		55F0C72C17C86E4E00EBC2D3 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F0C72B17C86E4E00EBC2D3 /* Test.m */; };
-		55F0C73117C86E5800EBC2D3 /* NSString+Trim.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F0C71817C86E2400EBC2D3 /* NSString+Trim.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		556F64CE17E36405004F8181 /* YLPerformLater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPerformLater.h; sourceTree = "<group>"; };
+		556F64CF17E36405004F8181 /* YLPerformLater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPerformLater.m; sourceTree = "<group>"; };
+		55C2338F187C3C460011E5B0 /* NSString+Trim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Trim.m"; sourceTree = "<group>"; };
+		55C23390187C3C460011E5B0 /* NSString+Trim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Trim.h"; sourceTree = "<group>"; };
 		55F0C6F717C86E0000EBC2D3 /* StringOpera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StringOpera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F0C6FA17C86E0000EBC2D3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		55F0C6FC17C86E0000EBC2D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -39,8 +44,6 @@
 		55F0C70C17C86E0000EBC2D3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		55F0C70E17C86E0000EBC2D3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		55F0C71017C86E0000EBC2D3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		55F0C71717C86E2400EBC2D3 /* NSString+Trim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Trim.h"; sourceTree = "<group>"; };
-		55F0C71817C86E2400EBC2D3 /* NSString+Trim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Trim.m"; sourceTree = "<group>"; };
 		55F0C71F17C86E4E00EBC2D3 /* Test.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F0C72017C86E4E00EBC2D3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		55F0C72617C86E4E00EBC2D3 /* Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Test-Info.plist"; sourceTree = "<group>"; };
@@ -74,6 +77,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55C2338E187C3C280011E5B0 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				55C2338F187C3C460011E5B0 /* NSString+Trim.m */,
+				55C23390187C3C460011E5B0 /* NSString+Trim.h */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		55F0C6EE17C86E0000EBC2D3 = {
 			isa = PBXGroup;
 			children = (
@@ -107,11 +119,12 @@
 		55F0C70017C86E0000EBC2D3 /* StringOpera */ = {
 			isa = PBXGroup;
 			children = (
+				55C2338E187C3C280011E5B0 /* Categories */,
 				55F0C70917C86E0000EBC2D3 /* AppDelegate.h */,
 				55F0C70A17C86E0000EBC2D3 /* AppDelegate.m */,
 				55F0C70117C86E0000EBC2D3 /* Supporting Files */,
-				55F0C71717C86E2400EBC2D3 /* NSString+Trim.h */,
-				55F0C71817C86E2400EBC2D3 /* NSString+Trim.m */,
+				556F64CE17E36405004F8181 /* YLPerformLater.h */,
+				556F64CF17E36405004F8181 /* YLPerformLater.m */,
 			);
 			path = StringOpera;
 			sourceTree = "<group>";
@@ -259,8 +272,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				55F0C70717C86E0000EBC2D3 /* main.m in Sources */,
+				55C23391187C3C460011E5B0 /* NSString+Trim.m in Sources */,
 				55F0C70B17C86E0000EBC2D3 /* AppDelegate.m in Sources */,
-				55F0C71917C86E2400EBC2D3 /* NSString+Trim.m in Sources */,
+				556F64D017E36405004F8181 /* YLPerformLater.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55F0C72C17C86E4E00EBC2D3 /* Test.m in Sources */,
-				55F0C73117C86E5800EBC2D3 /* NSString+Trim.m in Sources */,
+				556F64D117E3671B004F8181 /* YLPerformLater.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

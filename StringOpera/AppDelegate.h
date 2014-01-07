@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
+@interface AppDelegate : UIResponder <UIApplicationDelegate> {
+  @private
+  NSMutableString *_test;
+}
+
+@property (copy, nonatomic) NSString *test;
 @property (strong, nonatomic) UIWindow *window;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "YLPerformLater.h"
 
 @implementation AppDelegate
 
@@ -15,8 +16,32 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+  
+  
+  self.test =  [[NSMutableString alloc] init];
+  [_test appendString:[[NSMutableString alloc] initWithString:@"ddd"]];
+  [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(logTest:) userInfo:nil repeats:YES];
+  [[self.test performAfterDelay:5] appendString:@"ttttsdsdsfsd"];
+  
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (void)logTest:(id)userInfo
+{
+  NSLog(@"-------%@----",self.test);
+}
+
+
+- (void)setTest:(NSString *)aTest
+{
+  NSMutableString *copy = [aTest mutableCopy];
+  _test = copy;
+}
+
+- (NSString *)aTest
+{
+  return [_test copy];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
