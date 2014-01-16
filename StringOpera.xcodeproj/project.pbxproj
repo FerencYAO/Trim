@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		552211DF18882C8900B649D4 /* NSString+FontName.m in Sources */ = {isa = PBXBuildFile; fileRef = 552211DE18882C8900B649D4 /* NSString+FontName.m */; };
+		552211E118882CBC00B649D4 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552211E018882CBC00B649D4 /* CoreText.framework */; };
 		556F64D017E36405004F8181 /* YLPerformLater.m in Sources */ = {isa = PBXBuildFile; fileRef = 556F64CF17E36405004F8181 /* YLPerformLater.m */; };
 		556F64D117E3671B004F8181 /* YLPerformLater.m in Sources */ = {isa = PBXBuildFile; fileRef = 556F64CF17E36405004F8181 /* YLPerformLater.m */; };
 		55C23391187C3C460011E5B0 /* NSString+Trim.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C2338F187C3C460011E5B0 /* NSString+Trim.m */; };
@@ -27,6 +29,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		552211DD18882C8900B649D4 /* NSString+FontName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FontName.h"; sourceTree = "<group>"; };
+		552211DE18882C8900B649D4 /* NSString+FontName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FontName.m"; sourceTree = "<group>"; };
+		552211E018882CBC00B649D4 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		556F64CE17E36405004F8181 /* YLPerformLater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPerformLater.h; sourceTree = "<group>"; };
 		556F64CF17E36405004F8181 /* YLPerformLater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPerformLater.m; sourceTree = "<group>"; };
 		55C2338F187C3C460011E5B0 /* NSString+Trim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Trim.m"; sourceTree = "<group>"; };
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				552211E118882CBC00B649D4 /* CoreText.framework in Frameworks */,
 				55F0C6FB17C86E0000EBC2D3 /* UIKit.framework in Frameworks */,
 				55F0C6FD17C86E0000EBC2D3 /* Foundation.framework in Frameworks */,
 				55F0C6FF17C86E0000EBC2D3 /* CoreGraphics.framework in Frameworks */,
@@ -82,6 +88,8 @@
 			children = (
 				55C2338F187C3C460011E5B0 /* NSString+Trim.m */,
 				55C23390187C3C460011E5B0 /* NSString+Trim.h */,
+				552211DD18882C8900B649D4 /* NSString+FontName.h */,
+				552211DE18882C8900B649D4 /* NSString+FontName.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -108,6 +116,7 @@
 		55F0C6F917C86E0000EBC2D3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				552211E018882CBC00B649D4 /* CoreText.framework */,
 				55F0C6FA17C86E0000EBC2D3 /* UIKit.framework */,
 				55F0C6FC17C86E0000EBC2D3 /* Foundation.framework */,
 				55F0C6FE17C86E0000EBC2D3 /* CoreGraphics.framework */,
@@ -271,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				552211DF18882C8900B649D4 /* NSString+FontName.m in Sources */,
 				55F0C70717C86E0000EBC2D3 /* main.m in Sources */,
 				55C23391187C3C460011E5B0 /* NSString+Trim.m in Sources */,
 				55F0C70B17C86E0000EBC2D3 /* AppDelegate.m in Sources */,
