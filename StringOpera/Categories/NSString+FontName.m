@@ -15,10 +15,10 @@
     return [UIFont familyNames];
 }
 
-+ (NSString *)postscriptNameFromFullName:(NSString *)fullName
++ (CFStringRef)postscriptNameFromFullName:(NSString *)fullName
 {
     UIFont *font = [UIFont fontWithName:fullName size:1];
-    return (__bridge NSString *)(CTFontCopyPostScriptName((__bridge CTFontRef)(font)));
+    return CTFontCopyPostScriptName((__bridge CTFontRef)(font));
 }
 
 @end

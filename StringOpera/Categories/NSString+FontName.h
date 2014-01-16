@@ -12,6 +12,6 @@
 
 + (NSArray *)allFontFamilies;
 
-+ (NSString *)postscriptNameFromFullName:(NSString *)fullName;
++ (CFStringRef)postscriptNameFromFullName:(NSString *)fullName;
 
 @end
